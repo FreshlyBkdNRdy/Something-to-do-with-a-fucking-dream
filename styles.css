@@ -1,0 +1,53 @@
+/* GLOBAL BACKGROUND */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* LIGHTER OVERLAY SO THE RUINS SHOW */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18); /* was 0.55 — now ruins are visible */
+  backdrop-filter: blur(1px);
+}
+
+/* HEADER */
+.hero {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* PANEL (SEMI‑TRANSPARENT, NOT TOO DARK) */
+.panel {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.28); /* lighter so background shows */
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+}
+
+/* BUTTON LAYOUT */
+.buttons {
+  text-align: center;
+}
+
+/* SMALL, CLEAN, ELEGANT BUTTONS */
+button {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  width: auto;
+  display: inline-block;
+  margin: 6px;
+  border: none;
+  border-radius: 6px;
+  background: #d4a857;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
